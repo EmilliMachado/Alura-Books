@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
-    position: relative;
 }
 
 .cabeçalho {
@@ -13,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -31,14 +31,14 @@
     width: 60vw;
 }
 
-.container__botao:checked ~ .lista-menu {
+.container__botao:checked~.lista-menu {
     display: block;
 }
 
 .lista-menu__titulo,
 .lista-menu__item {
-padding: 1em;
-background-color: var(--branco);
+    padding: 1em;
+    background-color: var(--branco);
 }
 
 .lista-menu__titulo {
